@@ -22,9 +22,17 @@ localI18nInstance.init({
 	fallbackLng: 'en',
 });
 
+export const changeLanguage = async (lang: string) => {
+	return localI18nInstance.changeLanguage(lang);
+};
+
 export const t = (key: string, options?: any): string => {
 	const result = localI18nInstance.t(key, options);
 	return typeof result === 'string' ? result : JSON.stringify(result);
+};
+
+export const getAvailableLanguages = () => {
+	return Object.keys(localI18nInstance.store.data);
 };
 
 export { localI18nInstance as i18n };

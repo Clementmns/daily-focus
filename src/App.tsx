@@ -1,18 +1,18 @@
-import { useEffect } from '@lynx-js/react';
-
 import './App.css';
-import { t } from './locales/i18n.ts';
-import { LocaleSelector } from './components/LocaleSelector.tsx';
+import { LocaleSelector } from './components/lang/LocaleSelector.tsx';
+import { LanguageProvider } from './components/lang/LanguageProvider.tsx';
 
 export function App() {
-	useEffect(() => {
-		console.info('Hello, ReactLynx');
-	}, []);
+	return (
+		<LanguageProvider>
+			<AppContent />
+		</LanguageProvider>
+	);
+}
 
+function AppContent() {
 	return (
 		<view className='App'>
-			<text className='button'>Hello, {t('world')}</text>
-
 			<LocaleSelector />
 		</view>
 	);
