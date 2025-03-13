@@ -2,7 +2,8 @@
 
 ## Description
 
-DailyFocus est une application de minuteur Pomodoro personnalisable, fonctionnant entièrement en local. Elle permet d'améliorer la concentration et la productivité en organisant des sessions de travail avec des pauses adaptées.
+DailyFocus est une application de minuteur Pomodoro personnalisable, fonctionnant entièrement en local. Elle permet d'améliorer la concentration et la
+productivité en organisant des sessions de travail avec des pauses adaptées.
 
 ## Fonctionnalités
 
@@ -17,27 +18,27 @@ DailyFocus est une application de minuteur Pomodoro personnalisable, fonctionnan
 
 1. Clonez le dépôt :
 
-   ```sh
-   git clone https://github.com/clementmns/daily-focus.git
-   ```
+    ```sh
+    git clone https://github.com/clementmns/daily-focus.git
+    ```
 
 2. Accédez au dossier :
 
-   ```sh
-   cd daily-focus
-   ```
+    ```sh
+    cd daily-focus
+    ```
 
 3. Installez les dépendances (si nécessaire) :
 
-   ```sh
-   npm install
-   ```
+    ```sh
+    npm install
+    ```
 
 4. Lancez l'application :
 
-   ```sh
-   npm start
-   ```
+    ```sh
+    npm start
+    ```
 
 ## Technologies utilisées
 
