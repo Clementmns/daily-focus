@@ -1,1 +1,49 @@
-@import 'tailwindcss';
+:root {
+    --primary-color: #7C4DFF;
+    --accent-color: #BB86FC;
+
+    --background: linear-gradient(135deg, #FFFFFF, #E3F2FD);
+    --text: #000000;
+    --border: #E0E0E0;
+    --button: var(--primary-color);
+    --button-text: #FFFFFF;
+    --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #6200EA;
+        --accent-color: #3700B3;
+
+        --background: linear-gradient(135deg, #121212, #1E1E1E);
+        --text: #E0E0E0;
+        --border: #333333;
+        --button: var(--primary-color);
+        --button-text: #FFFFFF;
+        --shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.App {
+    background: var(--background);
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+text {
+    color: var(--text);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--button-text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}

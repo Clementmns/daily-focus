@@ -3,6 +3,7 @@
     "jsx": "preserve",
 
     "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
     "module": "node16",
     "moduleResolution": "node16",
 

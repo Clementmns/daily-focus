@@ -1,6 +1,7 @@
 import { useEffect } from '@lynx-js/react';
 
 import './App.css';
+import { i18n } from './locales/i18n.ts';
 
 export function App() {
   useEffect(() => {
@@ -8,8 +9,8 @@ export function App() {
   }, []);
 
   return (
-    <view className="flex h-full items-center justify-center">
-      <text>Hello, ReactLynx</text>
+    <view className="App">
+      <text className="button">Hello, {i18n.t("world")}</text>
     </view>
   );
 }
