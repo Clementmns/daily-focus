@@ -2,15 +2,17 @@
   "compilerOptions": {
     "jsx": "preserve",
 
+    "allowImportingTsExtensions": true,
     "module": "node16",
     "moduleResolution": "node16",
 
     "strict": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
+    "noEmit": true,
 
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  "exclude": ["dist/"],
+  "exclude": ["dist/"]
 }
